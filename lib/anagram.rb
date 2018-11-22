@@ -7,10 +7,11 @@ class Anagram
   end 
   
   def match(array)
+    newray = []
     wo = @word.split('').sort
     array.each do |w|
       x = w.split('').sort
-      w if x == wo
+      newray << w if x == wo
     end
   end
 end
