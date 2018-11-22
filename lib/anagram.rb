@@ -13,5 +13,6 @@ class Anagram
       x = w.split('').sort
       newray << w if x == wo
     end
+    newray
   end
 end
