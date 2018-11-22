@@ -10,6 +10,7 @@ class Anagram
     wo = @word.split('').sort
     array.each do |w|
       x = w.split('').sort
+      w if x == wo
     end
   end
 end
